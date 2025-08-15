@@ -1,0 +1,3 @@
+# add these to your requirements.txt file:
+pytorch
+torchvision
