@@ -291,19 +291,32 @@ To provide standardized object detection evaluation, the model was also evaluate
 These metrics follow the official **COCO evaluation protocol** implemented through **pycocotools**.
 
 ---
+# 5 Inference Latency Evaluation
 
-# 5️ Summary
+The inference performance of the **Seed Viability Detection Pipeline** was evaluated to determine its suitability for real-time agricultural applications.
+
+Latency was measured using the trained **Faster R-CNN model with a ResNet backbone**, computing the average time required to process a single image during inference.
+
+Key latency observations include:
+
+* **Average inference time:** ~0.082 seconds per image
+* **Inference throughput:** ~12.2 Frames Per Second (FPS)
+* **Efficient model execution using PyTorch inference mode (`torch.no_grad()`)**
+* **Suitable for near real-time agricultural inspection systems**
+* **Potential for deployment on edge or low-power inference devices**
+* **Applicable to automated seed quality analysis pipelines**
+# 6 Summary
 
 The proposed **Seed Viability Detection Pipeline** demonstrates the effectiveness of deep learning–based object detection for agricultural seed analysis.
 
 Key achievements include:
 
 * **High precision seed detection (~99%)**
-* **Robust object localization**
-* **COCO-standardized evaluation metrics**
-* **Optimized detection thresholds**
-
-The results highlight the potential of **Faster R-CNN** for automated seed viability analysis in agricultural applications.
+* **Robust object localization using Faster R-CNN with ResNet backbone**
+* **COCO-standardized evaluation metrics (mAP evaluation)**
+* **Optimized detection thresholds using random search**
+* **Efficient inference performance (~0.082 seconds per image, ~12.2 FPS)**
+* **Suitable for automated seed viability screening and potential edge deployment**
 
 ---
 
