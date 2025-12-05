@@ -27,7 +27,7 @@ This project is associated with an officially published Indian patent describing
 
 * Dr. Hemlata Parmar
 * Parth Gupta
-* Manas Mukundkumar Singh
+* Singh Manas Mukundkumar
 * Abhinav Mukherjee
 * Dr. Utsav Krishan Murari
 
