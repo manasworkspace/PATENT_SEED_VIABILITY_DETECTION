@@ -1,5 +1,38 @@
 
 
+
+---
+
+#  Patent
+
+This project is associated with an officially published Indian patent describing the proposed AI-based seed viability detection framework.
+
+## Patent Information
+
+| Field                            | Details                                                                                     |
+| -------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Title**                        | *An AI-Powered Computer Vision Approach for Seed Viability Detection in Hydroponic Systems* |
+| **Application Number**           | **202511097814 A**                                                                          |
+| **Country**                      | India                                                                                       |
+| **Filing Date**                  | 10 October 2025                                                                             |
+| **Publication Date**             | 05 December 2025                                                                            |
+| **Applicant**                    | Manipal University Jaipur                                                                   |
+| **International Classification** | G06N0003045000, G06N0003080000, G06N0020000000, G06N0003098000, G06N0003096000              |
+| **Pages**                        | 13                                                                                          |
+| **Claims**                       | 10                                                                                          |
+
+---
+
+## Inventors
+
+* Dr. Hemlata Parmar
+* Parth Gupta
+* Manas Mukundkumar Singh
+* Abhinav Mukherjee
+* Dr. Utsav Krishan Murari
+
+---
+
 ---
 
 #  Training Pipeline
@@ -143,7 +176,7 @@ Here is your **cleaned and properly formatted GitHub README section** with corre
 
 ---
 
-# 📊 Experimental Results
+#  Experimental Results
 
 This section summarizes the experimental evaluation of the seed viability detection model trained using **Faster R-CNN** with a **ResNet-50 FPN** backbone implemented in **PyTorch** and **Torchvision**.
 
@@ -151,7 +184,7 @@ The dataset annotations follow the **COCO format**, and evaluation is performed 
 
 ---
 
-# 1️⃣ Initial Model Evaluation
+# 1️ Initial Model Evaluation
 
 The baseline model was trained on approximately **5,000 seed images** using COCO-style bounding box annotations.
 
@@ -178,7 +211,7 @@ To improve the balance between precision and recall, **confidence threshold opti
 
 ---
 
-# 2️⃣ Threshold Optimization (Random Search)
+# 2️ Threshold Optimization (Random Search)
 
 Object detection models often require tuning the **confidence threshold** used to accept predicted bounding boxes.
 
@@ -212,7 +245,7 @@ The threshold **0.10** provided the best balance between precision and recall an
 
 ---
 
-# 3️⃣ Final Test Set Evaluation
+# 3️ Final Test Set Evaluation
 
 The optimized model was evaluated on the **held-out test dataset** using the best threshold discovered during validation.
 
@@ -235,7 +268,7 @@ This indicates that the model produces **highly reliable detections with very fe
 
 ---
 
-# 4️⃣ COCO Evaluation Metrics
+# 4️ COCO Evaluation Metrics
 
 To provide standardized object detection evaluation, the model was also evaluated using the **COCO Mean Average Precision (mAP)** metric.
 
@@ -259,7 +292,7 @@ These metrics follow the official **COCO evaluation protocol** implemented throu
 
 ---
 
-# 5️⃣ Summary
+# 5️ Summary
 
 The proposed **Seed Viability Detection Pipeline** demonstrates the effectiveness of deep learning–based object detection for agricultural seed analysis.
 
